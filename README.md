@@ -28,6 +28,10 @@
 | `build/` | Vivado 重建脚本 |
 | `verification/` | 按键与分类边界的仿真 testbench |
 | `reports_and_build_delivery/` | build22 实现与时序报告 |
+| `report/design_report.pdf` | 竞赛设计报告；`report/latex/` 为可编辑 LaTeX 源码与配图 |
+| `report/ai_collaboration.md` | 需求、模型建议、人工纠错和证据边界摘要 |
+| `skill/README.md` | 可复用的固定机位形态检测调试流程 |
+| `LICENSE`, `THIRD_PARTY_NOTICES.md` | 原创源码许可和第三方文件的权利边界 |
 
 ## 上板运行
 
@@ -47,4 +51,4 @@ BTN0 按一次显示并锁存分类，再按一次返回 WAIT。
 
 本项目采用角数阈值进行实验性分类，尚不能作为药材安全鉴别依据。强阴影、遮挡、残缺样品或不同拍摄条件仍需补充验证。早期 CNN 训练、旧版 overlay、临时调参及视频剪辑文件不属于该版本的运行代码，未纳入本包。
 
-`SHA256SUMS.txt` 记录包内所有文件的校验值；`SOURCE_MANIFEST.json` 记录来源。原始完整交付目录位于工作区 `final_delivery_20261028/star_anise_fpga_complete_delivery_20261028_v2/`。
+`SHA256SUMS.txt` 与 `SOURCE_MANIFEST.json` 是原 build22 精简交付包的快照清单，不覆盖后来补充的 `report/`、`skill/` 与许可说明。报告及上述补充文件以 Git 提交记录为准。
